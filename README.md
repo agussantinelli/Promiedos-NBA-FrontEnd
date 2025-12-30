@@ -1,4 +1,4 @@
-<h1>🏀 Promiedos NBA – FrontEnd</h1>
+<h1 align="center">🏀 Promiedos NBA – FrontEnd</h1>
 
 <div align="center">
 
