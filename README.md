@@ -10,19 +10,23 @@
     <img src="https://img.shields.io/badge/💻%20Repo%20Frontend-Astro%20%7C%20TypeScript-FF5F00?style=for-the-badge&logo=astro&logoColor=white" alt="Repo Frontend"/>
   </a>
 
-</div>
-
-<p align="center">
   <a href="https://github.com/agussantinelli" target="_blank">
     <img src="https://img.shields.io/badge/👤%20Agustín%20Santinelli-agussantinelli-000000?style=for-the-badge&logo=github&logoColor=white" alt="Agus"/>
   </a>
-</p>
 
-<p align="center">
+</div>
+
+<div align="center">
   <img src="https://img.shields.io/badge/Astro-Framework-FF5F00?style=for-the-badge&logo=astro&logoColor=white" alt="Astro Badge"/>
   <img src="https://img.shields.io/badge/TypeScript-Lenguaje-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge"/>
   <img src="https://img.shields.io/badge/HTML%20%7C%20CSS-UI-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="HTML/CSS Badge"/>
-</p>
+</div>
+
+<div align="center">
+    <a href="https://drive.google.com/drive/folders/1EUGlDWBfIjM2IB9C-M7n3oqcy_gZE8f-" target="_blank">
+        <img src="https://img.shields.io/badge/📂%20Documentación%20del%20Proyecto-Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Docs Badge"/>
+    </a>
+</div>
 
 <hr/>
 
