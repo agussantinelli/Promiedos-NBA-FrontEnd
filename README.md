@@ -197,11 +197,19 @@ npm run dev
 
 <h2>📬 Contacto</h2>
 
-<p>
-  Autor: <strong>Agustín Santinelli</strong><br/>
-  Email: <a href="mailto:agustinsantinelli@gmail.com">agustinsantinelli@gmail.com</a><br/>
-  GitHub: <a href="https://github.com/agussantinelli" target="_blank">@agussantinelli</a>
-</p>
+<div align="center">
+  
+  <img src="https://img.shields.io/badge/Autor-Agustín%20Santinelli-2b3137?style=for-the-badge&logo=person&logoColor=white" alt="Autor"/>
+
+  <a href="mailto:agustinsantinelli@gmail.com">
+    <img src="https://img.shields.io/badge/Email-agustinsantinelli%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+
+  <a href="https://github.com/agussantinelli" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-@agussantinelli-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+
+</div>
 
 <hr/>
 
