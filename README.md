@@ -3,7 +3,7 @@
 <div align="center">
 
   <a href="https://github.com/agussantinelli/Promiedos-NBA-FrontEnd" target="_blank" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/💻%20Repo%20Frontend-Astro%20%7C%20TypeScript-FF5F00?style=for-the-badge&logo=astro&logoColor=white" alt="Repo Frontend"/>
+    <img src="https://img.shields.io/badge/💻%20Repo%20Frontend-Vue.js%20%7C%20TypeScript-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Repo Frontend"/>
   </a>
 
   <a href="https://github.com/agussantinelli/Promiedos-NBA-BackEnd" target="_blank" style="text-decoration: none;">
@@ -17,7 +17,7 @@
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Astro-Framework-FF5F00?style=for-the-badge&logo=astro&logoColor=white" alt="Astro Badge"/>
+  <img src="https://img.shields.io/badge/Vue.js-Framework-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue Badge"/>
   <img src="https://img.shields.io/badge/TypeScript-Lenguaje-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge"/>
   <img src="https://img.shields.io/badge/HTML%20%7C%20CSS-UI-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="HTML/CSS Badge"/>
 </div>
@@ -40,7 +40,7 @@
 
 <p>
   La idea es crear una web que hoy <strong>no existe en español</strong>, combinando el espíritu de sitios como Promiedos, 
-  Basketball Reference y ESPN Stats, pero con foco total en la NBA y en una experiencia limpia, rápida y bien organizada.
+  Basketball Reference y ESPN Stats, utilizando la reactividad y potencia de <strong>Vue.js</strong> para una experiencia de usuario fluida y dinámica.
 </p>
 
 <hr/>
@@ -50,36 +50,36 @@
 <table>
   <thead>
     <tr>
-      <th>Componente</th>
-      <th>Tecnología</th>
-      <th>Descripción</th>
+      <th align="left">Componente</th>
+      <th align="left">Tecnología</th>
+      <th align="left">Descripción</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Framework</strong></td>
-      <td>Astro</td>
-      <td>Render híbrido (SSR/SSG), ideal para contenido estático y performance.</td>
+      <td>Vue.js 3</td>
+      <td>Framework progresivo para construir interfaces de usuario reactivas y eficientes.</td>
     </tr>
     <tr>
       <td><strong>Lenguaje</strong></td>
       <td>TypeScript</td>
-      <td>Tipado estricto en todos los componentes y lógica de datos.</td>
+      <td>Tipado estricto en todos los componentes y lógica de datos para mayor robustez.</td>
     </tr>
     <tr>
       <td><strong>UI</strong></td>
       <td>HTML + CSS / Tailwind (a definir)</td>
-      <td>Diseño moderno, responsive y accesible.</td>
+      <td>Diseño moderno, responsive y totalmente accesible.</td>
     </tr>
     <tr>
-      <td><strong>Datos</strong></td>
-      <td>REST API</td>
-      <td>Consumo del backend Promiedos NBA en Node + Express + MySQL.</td>
+      <td><strong>Estado / Datos</strong></td>
+      <td>Pinia / Axios</td>
+      <td>Gestión de estado global y consumo de la REST API de Promiedos NBA.</td>
     </tr>
     <tr>
-      <td><strong>SEO</strong></td>
-      <td>Astro Islands + Meta tags</td>
-      <td>Páginas estáticas optimizadas para buscadores.</td>
+      <td><strong>Routing</strong></td>
+      <td>Vue Router</td>
+      <td>Navegación fluida entre secciones sin recargas de página (SPA).</td>
     </tr>
   </tbody>
 </table>
@@ -90,7 +90,7 @@
 
 <h3>📊 Resultados y estadísticas en tiempo real</h3>
 <ul>
-  <li>Resultados de la <strong>NBA actualizados en el momento</strong>.</li>
+  <li>Resultados de la <strong>NBA actualizados en el momento</strong> mediante reactividad de Vue.</li>
   <li>Detalle de cada partido:
     <ul>
       <li>Score por cuarto, prórrogas, boxscore básico.</li>
@@ -98,75 +98,62 @@
       <li>Resumen del encuentro (texto + datos).</li>
     </ul>
   </li>
-  <li>Sección de <strong>partidos del día</strong> y calendario por fecha/temporada.</li>
+  <li>Sección de <strong>partidos del día</strong> y calendario dinámico.</li>
 </ul>
 
 <h3>📈 Estadísticas de jugadores y equipos</h3>
 <ul>
-  <li>Estadísticas individuales:
+  <li>Estadísticas individuales filtrables:
     <ul>
-      <li><strong>PPG</strong> (puntos por partido)</li>
-      <li><strong>APG</strong> (asistencias por partido)</li>
-      <li><strong>RPG</strong> (rebotes por partido, si se incluye)</li>
-      <li><strong>BPG</strong> (tapones por partido)</li>
-      <li><strong>SPG</strong> (robos por partido)</li>
-      <li><strong>Stocks</strong> (robos + tapones)</li>
-      <li>MPG / Minutos jugados, eficiencia y más métricas avanzadas (a definir).</li>
+      <li><strong>PPG</strong>, <strong>APG</strong>, <strong>RPG</strong>, <strong>BPG</strong>, <strong>SPG</strong>.</li>
+      <li><strong>Stocks</strong> (robos + tapones).</li>
+      <li>Métricas avanzadas procesadas en el cliente para mayor velocidad.</li>
     </ul>
   </li>
-  <li>Estadísticas por equipo y por temporada.</li>
-  <li>Rankings ordenados por distintas métricas (scorers, pasadores, defensores, etc.).</li>
+  <li>Rankings en tiempo real ordenados por distintas métricas.</li>
 </ul>
 
 <h3>🏆 Logros individuales e historia</h3>
 <ul>
-  <li>Secciones históricas de:
+  <li>Secciones históricas dinámicas:
     <ul>
-      <li><strong>MVP</strong> por temporada.</li>
-      <li><strong>All-Star</strong> (participaciones, MVPs del All-Star Game).</li>
-      <li><strong>Hall of Fame</strong> y jugadores legendarios.</li>
-      <li>Otros premios: DPOY, ROY, MIP, 6MOY, Finals MVP, etc. (a futuro).</li>
+      <li><strong>MVP</strong>, <strong>All-Star</strong>, <strong>Hall of Fame</strong>.</li>
+      <li>Premios adicionales (DPOY, ROY, etc.) con vistas de detalle.</li>
     </ul>
   </li>
-  <li>Listados por década, franquicia, posición, etc.</li>
 </ul>
 
-<h3>🏟️ Páginas estáticas por equipo</h3>
+<h3>🏟️ Páginas dinámicas por equipo</h3>
 <ul>
-  <li>Ficha completa de cada franquicia:
+  <li>Ficha completa de cada franquicia generada mediante rutas dinámicas:
     <ul>
-      <li>Nombre, ciudad, año de fundación.</li>
-      <li><strong>Datos históricos</strong> (campeonatos, finales, rachas importantes).</li>
-      <li>Fotos del equipo, <strong>estadio</strong> e infraestructura.</li>
-      <li>Información sobre la <strong>idiosincrasia</strong> de la franquicia 
-          (cultura, rivalidades, jugadores emblemáticos).</li>
+      <li>Datos históricos, campeonatos y finales.</li>
+      <li>Información visual de estadios e infraestructura.</li>
+      <li>Cultura y jugadores emblemáticos presentados de forma interactiva.</li>
     </ul>
   </li>
-  <li>Páginas totalmente en español, pensadas como “wiki visual” de cada equipo.</li>
 </ul>
 
 <hr/>
 
-<h2>🧩 Arquitectura del FrontEnd</h2>
+<h2>🧩 Arquitectura del FrontEnd (Vue Structure)</h2>
 
 <ul>
-  <li>Rutas de Astro para:
+  <li><strong>Sistema de Rutas (Vue Router):</strong>
     <ul>
-      <li><code>/</code> – Dashboard general con partidos del día y destacados.</li>
-      <li><code>/teams</code> – Listado de equipos.</li>
-      <li><code>/teams/[id]</code> – Página estática con datos de cada equipo.</li>
-      <li><code>/games/today</code> – Partidos de la jornada.</li>
-      <li><code>/games/[id]</code> – Detalle completo del partido.</li>
-      <li><code>/players</code> – Listados y rankings de jugadores.</li>
-      <li><code>/history</code> – Logros históricos y premios.</li>
+      <li><code>/</code> – Dashboard principal con el "Live Score".</li>
+      <li><code>/teams</code> – Listado interactivo de franquicias.</li>
+      <li><code>/teams/:id</code> – Perfil detallado del equipo (Props-based).</li>
+      <li><code>/games/:id</code> – Vista detallada del partido con componentes reactivos.</li>
+      <li><code>/players</code> – Buscador y tablas de líderes.</li>
+      <li><code>/history</code> – Explorador de premios y leyendas.</li>
     </ul>
   </li>
-  <li>Componentes reutilizables para tarjetas de partido, tablas de estadísticas y cabeceras de sección.</li>
-  <li>Consumo de datos desde el BackEnd via fetch/cliente HTTP.</li>
+  <li><strong>Componentes SFC (Single File Components):</strong> Estructura organizada en <code>/components</code> para máxima reutilización de UI.</li>
+  <li><strong>Gestión de Datos:</strong> Servicios centralizados para llamadas a la API mediante Axios.</li>
 </ul>
 
 <hr/>
-
 <h2>🚀 Puesta en marcha (dev)</h2>
 
 <pre><code>npm install
