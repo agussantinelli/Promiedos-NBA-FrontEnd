@@ -68,7 +68,7 @@
     </tr>
     <tr>
       <td><strong>UI</strong></td>
-      <td>HTML + CSS / Tailwind (a definir)</td>
+      <td>HTML + CSS</td>
       <td>Diseño moderno, responsive y totalmente accesible.</td>
     </tr>
     <tr>
