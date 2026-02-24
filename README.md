@@ -146,6 +146,36 @@
 </ul>
 
 <hr/>
+
+
+<h2>📁 Estructura del Proyecto</h2>
+
+<pre><code>Promiedos-NBA-FrontEnd/
+├── public/                                      # Archivos estáticos publicly accessible
+├── src/                                         # Código fuente principal
+│   ├── assets/                                  # Imágenes, fuentes y estilos base
+│   ├── components/                              # Componentes Vue reutilizables
+│   │   ├── common/                              # Botones, Spinners, Modales
+│   │   ├── layout/                              # Navbar, Sidebar, Footer
+│   │   └── widgets/                             # Tablas de stats, scoreboards
+│   ├── router/                                  # Configuración de Vue Router (Rutas)
+│   ├── services/                                # Comunicación con API NestJS (Axios)
+│   ├── stores/                                  # Estado global con Pinia
+│   ├── types/                                   # Interfaces y definiciones TS
+│   ├── utils/                                   # Helpers de formateo
+│   ├── views/                                   # Páginas principales del sitio
+│   ├── App.vue                                  # Componente raíz
+│   └── main.ts                                  # punto de entrada
+├── .gitignore                                   # Archivos excluidos de Git
+├── index.html                                   # Template HTML base
+├── package.json                                 # Scripts y dependencias
+├── pnpm-lock.yaml                               # Lockfile de pnpm
+├── tsconfig.json                                # Configuración de TypeScript
+└── vite.config.ts                               # Configuración de Vite
+</code></pre>
+
+<hr/>
+
 <h2>🚀 Puesta en marcha (dev)</h2>
 
 <pre><code>pnpm install
