@@ -7,7 +7,7 @@
   </a>
 
   <a href="https://github.com/agussantinelli/Promiedos-NBA-BackEnd" target="_blank" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/⚙️%20Repo%20Backend-Node.js%20%7C%20Express-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Repo Backend"/>
+    <img src="https://img.shields.io/badge/⚙️%20Repo%20Backend-NestJS%20%7C%20PostgreSQL-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="Repo Backend"/>
   </a>
 
   <a href="https://github.com/agussantinelli" target="_blank">
@@ -19,7 +19,7 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Vue.js-Framework-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue Badge"/>
   <img src="https://img.shields.io/badge/TypeScript-Lenguaje-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge"/>
-  <img src="https://img.shields.io/badge/HTML%20%7C%20CSS-UI-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="HTML/CSS Badge"/>
+  <img src="https://img.shields.io/badge/pnpm-Package%20Manager-F69220?style=for-the-badge&logo=pnpm&logoColor=white" alt="pnpm Badge"/>
 </div>
 
 <div align="center">
@@ -42,7 +42,7 @@
 
 <p>
   La idea es crear una web que hoy <strong>no existe en español</strong>, combinando el espíritu de sitios como Promiedos, 
-  Basketball Reference y ESPN Stats, utilizando la reactividad y potencia de <strong>Vue.js</strong> para una experiencia de usuario fluida y dinámica.
+  Basketball Reference y ESPN Stats, utilizando la reactividad y potencia de <strong>Vue.js 3</strong> para una experiencia de usuario fluida y dinámica.
 </p>
 
 <hr/>
@@ -69,14 +69,14 @@
       <td>Tipado estricto en todos los componentes y lógica de datos para mayor robustez.</td>
     </tr>
     <tr>
-      <td><strong>UI</strong></td>
-      <td>HTML + CSS</td>
-      <td>Diseño moderno, responsive y totalmente accesible.</td>
+      <td><strong>Gestor de Paquetes</strong></td>
+      <td>pnpm</td>
+      <td>Eficiencia en la gestión de dependencias y tiempos de instalación reducidos.</td>
     </tr>
     <tr>
       <td><strong>Estado / Datos</strong></td>
       <td>Pinia / Axios</td>
-      <td>Gestión de estado global y consumo de la REST API de Promiedos NBA.</td>
+      <td>Gestión de estado global y consumo de la REST API (NestJS).</td>
     </tr>
     <tr>
       <td><strong>Routing</strong></td>
@@ -97,7 +97,6 @@
     <ul>
       <li>Score por cuarto, prórrogas, boxscore básico.</li>
       <li>Mejores jugadores del partido.</li>
-      <li>Resumen del encuentro (texto + datos).</li>
     </ul>
   </li>
   <li>Sección de <strong>partidos del día</strong> y calendario dinámico.</li>
@@ -141,25 +140,16 @@
 <h2>🧩 Arquitectura del FrontEnd (Vue Structure)</h2>
 
 <ul>
-  <li><strong>Sistema de Rutas (Vue Router):</strong>
-    <ul>
-      <li><code>/</code> – Dashboard principal con el "Live Score".</li>
-      <li><code>/teams</code> – Listado interactivo de franquicias.</li>
-      <li><code>/teams/:id</code> – Perfil detallado del equipo (Props-based).</li>
-      <li><code>/games/:id</code> – Vista detallada del partido con componentes reactivos.</li>
-      <li><code>/players</code> – Buscador y tablas de líderes.</li>
-      <li><code>/history</code> – Explorador de premios y leyendas.</li>
-    </ul>
-  </li>
-  <li><strong>Componentes SFC (Single File Components):</strong> Estructura organizada en <code>/components</code> para máxima reutilización de UI.</li>
-  <li><strong>Gestión de Datos:</strong> Servicios centralizados para llamadas a la API mediante Axios.</li>
+  <li><strong>Sistema de Rutas (Vue Router):</strong> Dashboard, Teams, TeamDetail, GameDetail, Players, History.</li>
+  <li><strong>Componentes SFC:</strong> Estructura organizada en <code>/src/components</code>.</li>
+  <li><strong>Servicios:</strong> Centralizados en <code>/src/services</code> para llamadas a la API (NestJS).</li>
 </ul>
 
 <hr/>
 <h2>🚀 Puesta en marcha (dev)</h2>
 
-<pre><code>npm install
-npm run dev
+<pre><code>pnpm install
+pnpm run dev
 </code></pre>
 
 <p>El proyecto apunta a desplegarse en un hosting estatico/SSR compatible con Astro (ej: Vercel, Netlify, etc.).</p>
