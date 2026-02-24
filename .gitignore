@@ -1,0 +1,27 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# pnpm
+pnpm-lock.yaml
+
+# IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode
