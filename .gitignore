@@ -1,27 +1,23 @@
-# System Files
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
 .DS_Store
 Thumbs.db
 
-# Dependencies
-node_modules
-dist
-dist-ssr
-
-# Environment Variables
+# Env
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+!.env.test
 
-# pnpm
-pnpm-lock.yaml
-
-# IDEs
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-.vscode
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
