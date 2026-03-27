@@ -3,11 +3,11 @@
 <div align="center">
 
   <a href="https://github.com/agussantinelli/Promiedos-NBA-FrontEnd" target="_blank" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/💻%20Repo%20Frontend-Vue.js%20%7C%20TypeScript-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Repo Frontend"/>
+    <img src="https://img.shields.io/badge/💻%20Repo%20Frontend-SvelteKit%20%7C%20TypeScript-FF3E00?style=for-the-badge&logo=svelte&logoColor=white" alt="Repo Frontend"/>
   </a>
 
   <a href="https://github.com/agussantinelli/Promiedos-NBA-BackEnd" target="_blank" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/⚙️%20Repo%20Backend-NestJS%20%7C%20PostgreSQL-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="Repo Backend"/>
+    <img src="https://img.shields.io/badge/⚙️%20Repo%20Backend-Fastify%20%7C%20PostgreSQL-000000?style=for-the-badge&logo=fastify&logoColor=white" alt="Repo Backend"/>
   </a>
 
   <a href="https://github.com/agussantinelli" target="_blank">
@@ -17,8 +17,9 @@
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Vue.js-Framework-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue Badge"/>
+  <img src="https://img.shields.io/badge/SvelteKit-Framework-FF3E00?style=for-the-badge&logo=svelte&logoColor=white" alt="SvelteKit Badge"/>
   <img src="https://img.shields.io/badge/TypeScript-Lenguaje-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge"/>
+  <img src="https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite Badge"/>
   <img src="https://img.shields.io/badge/pnpm-Package%20Manager-F69220?style=for-the-badge&logo=pnpm&logoColor=white" alt="pnpm Badge"/>
 </div>
 
@@ -42,7 +43,7 @@
 
 <p>
   La idea es crear una web que hoy <strong>no existe en español</strong>, combinando el espíritu de sitios como Promiedos, 
-  Basketball Reference y ESPN Stats, utilizando la reactividad y potencia de <strong>Vue.js 3</strong> para una experiencia de usuario fluida y dinámica.
+  Basketball Reference y ESPN Stats, aprovechando la reactividad y el rendimiento de <strong>SvelteKit</strong> para una experiencia de usuario fluida, rápida y con soporte SSR.
 </p>
 
 <hr/>
@@ -60,13 +61,23 @@
   <tbody>
     <tr>
       <td><strong>Framework</strong></td>
-      <td>Vue.js 3</td>
-      <td>Framework progresivo para construir interfaces de usuario reactivas y eficientes.</td>
+      <td>SvelteKit</td>
+      <td>Framework oficial de Svelte con SSR, routing y file-based pages.</td>
+    </tr>
+    <tr>
+      <td><strong>UI</strong></td>
+      <td>Svelte 5</td>
+      <td>Compilador reactivo que genera código DOM nativo, sin Virtual DOM.</td>
     </tr>
     <tr>
       <td><strong>Lenguaje</strong></td>
       <td>TypeScript</td>
-      <td>Tipado estricto en todos los componentes y lógica de datos para mayor robustez.</td>
+      <td>Tipado estático en todos los componentes y lógica de datos.</td>
+    </tr>
+    <tr>
+      <td><strong>Build Tool</strong></td>
+      <td>Vite</td>
+      <td>Dev server ultrarrápido con HMR y builds optimizados.</td>
     </tr>
     <tr>
       <td><strong>Gestor de Paquetes</strong></td>
@@ -74,14 +85,9 @@
       <td>Eficiencia en la gestión de dependencias y tiempos de instalación reducidos.</td>
     </tr>
     <tr>
-      <td><strong>Estado / Datos</strong></td>
-      <td>Pinia / Axios</td>
-      <td>Gestión de estado global y consumo de la REST API (NestJS).</td>
-    </tr>
-    <tr>
-      <td><strong>Routing</strong></td>
-      <td>Vue Router</td>
-      <td>Navegación fluida entre secciones sin recargas de página (SPA).</td>
+      <td><strong>Consumo de API</strong></td>
+      <td>fetch nativo / SvelteKit load</td>
+      <td>Consumo de la REST API (Fastify) usando las funciones <code>load</code> de SvelteKit.</td>
     </tr>
   </tbody>
 </table>
@@ -92,7 +98,7 @@
 
 <h3>📊 Resultados y estadísticas en tiempo real</h3>
 <ul>
-  <li>Resultados de la <strong>NBA actualizados en el momento</strong> mediante reactividad de Vue.</li>
+  <li>Resultados de la <strong>NBA actualizados en el momento</strong>.</li>
   <li>Detalle de cada partido:
     <ul>
       <li>Score por cuarto, prórrogas, boxscore básico.</li>
@@ -126,7 +132,7 @@
 
 <h3>🏟️ Páginas dinámicas por equipo</h3>
 <ul>
-  <li>Ficha completa de cada franquicia generada mediante rutas dinámicas:
+  <li>Ficha completa de cada franquicia mediante rutas dinámicas de SvelteKit:
     <ul>
       <li>Datos históricos, campeonatos y finales.</li>
       <li>Información visual de estadios e infraestructura.</li>
@@ -137,40 +143,42 @@
 
 <hr/>
 
-<h2>🧩 Arquitectura del FrontEnd (Vue Structure)</h2>
+<h2>🧩 Arquitectura del FrontEnd (SvelteKit)</h2>
 
 <ul>
-  <li><strong>Sistema de Rutas (Vue Router):</strong> Dashboard, Teams, TeamDetail, GameDetail, Players, History.</li>
-  <li><strong>Componentes SFC:</strong> Estructura organizada en <code>/src/components</code>.</li>
-  <li><strong>Servicios:</strong> Centralizados en <code>/src/services</code> para llamadas a la API (NestJS).</li>
+  <li><strong>File-based Routing (SvelteKit):</strong> Páginas en <code>src/routes/</code> — Dashboard, Teams, GameDetail, Players, History.</li>
+  <li><strong>Componentes Svelte:</strong> Organizados en <code>src/lib/components/</code>.</li>
+  <li><strong>Servicios:</strong> Centralizados en <code>src/lib/services/</code> para llamadas a la API Fastify.</li>
+  <li><strong>Tipos:</strong> Definiciones TypeScript compartidas en <code>src/lib/types/</code>.</li>
 </ul>
 
 <hr/>
 
-
 <h2>📁 Estructura del Proyecto</h2>
 
 <pre><code>Promiedos-NBA-FrontEnd/
-├── public/                                      # Archivos estáticos publicly accessible
-├── src/                                         # Código fuente principal
-│   ├── assets/                                  # Imágenes, fuentes y estilos base
-│   ├── components/                              # Componentes Vue reutilizables
-│   │   ├── common/                              # Botones, Spinners, Modales
-│   │   ├── layout/                              # Navbar, Sidebar, Footer
-│   │   └── widgets/                             # Tablas de stats, scoreboards
-│   ├── router/                                  # Configuración de Vue Router (Rutas)
-│   ├── services/                                # Comunicación con API NestJS (Axios)
-│   ├── stores/                                  # Estado global con Pinia
-│   ├── types/                                   # Interfaces y definiciones TS
-│   ├── utils/                                   # Helpers de formateo
-│   ├── views/                                   # Páginas principales del sitio
-│   ├── App.vue                                  # Componente raíz
-│   └── main.ts                                  # punto de entrada
-├── .gitignore                                   # Archivos excluidos de Git
-├── index.html                                   # Template HTML base
-├── package.json                                 # Scripts y dependencias
-├── pnpm-lock.yaml                               # Lockfile de pnpm
-├── tsconfig.json                                # Configuración de TypeScript
+├── src/
+│   ├── lib/
+│   │   ├── components/                          # Componentes Svelte reutilizables
+│   │   │   ├── common/                          # Botones, Spinners, Modales
+│   │   │   ├── layout/                          # Navbar, Sidebar, Footer
+│   │   │   └── widgets/                         # Tablas de stats, scoreboards
+│   │   ├── services/                            # Comunicación con API Fastify (fetch)
+│   │   ├── types/                               # Interfaces y definiciones TS
+│   │   └── utils/                               # Helpers de formateo
+│   ├── routes/                                  # Páginas SvelteKit (file-based routing)
+│   │   ├── +layout.svelte                       # Layout raíz
+│   │   ├── +page.svelte                         # Dashboard (Home)
+│   │   ├── teams/                               # Listado y detalle de equipos
+│   │   ├── players/                             # Listado y detalle de jugadores
+│   │   └── history/                             # Sección histórica
+│   └── app.html                                 # Template HTML base
+├── static/                                      # Archivos estáticos
+├── .gitignore
+├── package.json
+├── pnpm-lock.yaml
+├── svelte.config.js                             # Configuración de SvelteKit
+├── tsconfig.json
 └── vite.config.ts                               # Configuración de Vite
 </code></pre>
 
@@ -179,10 +187,11 @@
 <h2>🚀 Puesta en marcha (dev)</h2>
 
 <pre><code>pnpm install
-pnpm run dev
+pnpm dev
+# Aplicación disponible en http://localhost:5173
 </code></pre>
 
-<p>El proyecto apunta a desplegarse en un hosting estatico/SSR compatible con Astro (ej: Vercel, Netlify, etc.).</p>
+<p>El proyecto está configurado para desplegarse en plataformas con soporte SSR (Vercel, Netlify, etc.) mediante <code>@sveltejs/adapter-auto</code>.</p>
 
 <hr/>
 
