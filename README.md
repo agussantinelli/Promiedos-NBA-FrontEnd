@@ -197,17 +197,6 @@
 
 <hr/>
 
-<h2>🚀 Puesta en marcha (dev)</h2>
-
-<pre><code>pnpm install
-pnpm dev
-# Aplicación disponible en http://localhost:5173
-</code></pre>
-
-<p>El proyecto está configurado para desplegarse en plataformas con soporte SSR (Vercel, Netlify, etc.) mediante <code>@sveltejs/adapter-auto</code>.</p>
-
-<hr/>
-
 <h2>📌 Futuras extensiones</h2>
 
 <p>
@@ -226,6 +215,16 @@ pnpm dev
 
 <hr/>
 
+<h2>🚀 Puesta en marcha (dev)</h2>
+
+<pre><code>pnpm install
+pnpm dev
+# Aplicación disponible en http://localhost:5173
+</code></pre>
+
+<p>El proyecto está configurado para desplegarse en plataformas con soporte SSR (Vercel, Netlify, etc.) mediante <code>@sveltejs/adapter-auto</code>.</p>
+
+<hr/>
 
 <h2>💻 Comandos pnpm disponibles</h2>
 
