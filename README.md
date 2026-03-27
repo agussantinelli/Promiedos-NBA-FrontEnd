@@ -184,6 +184,21 @@
 
 <hr/>
 
+<hr/>
+
+<h2>🛠️ Skills Especializadas</h2>
+<p>Ubicadas en <code>.agent/skills/</code>, son guías técnicas que definen cómo se deben construir las diferentes partes del sistema:</p>
+
+<ul>
+    <li><b>⚡ svelte5:</b> Reglas para componentes Svelte 5 (runes, <code>$state</code>, <code>$props</code>) y arquitectura de rutas SvelteKit.</li>
+    <li><b>📱 responsive-design:</b> Diseño mobile-first, breakpoints consistentes y layouts fluidos para Promiedos-NBA.</li>
+    <li><b>🧹 code-quality:</b> Política "Sin Comentarios", naming conventions (Svelte/SvelteKit) y fetch centralizado en <code>src/lib/services/</code>.</li>
+    <li><b>🔄 readme-auto-sync:</b> Sincronización obligatoria del README cuando cambia la estructura, el stack o los comandos.</li>
+    <li><b>📚 global-skills:</b> Índice maestro de todas las skills de diseño disponibles en el proyecto.</li>
+</ul>
+
+<hr/>
+
 <h2>🚀 Puesta en marcha (dev)</h2>
 
 <pre><code>pnpm install
