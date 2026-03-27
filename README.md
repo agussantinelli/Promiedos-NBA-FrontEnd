@@ -213,6 +213,42 @@ pnpm dev
 
 <hr/>
 
+
+<h2>💻 Comandos pnpm disponibles</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comando</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><code>pnpm dev</code></p></td>
+      <td>Inicia el servidor de desarrollo local de <b>Vite</b> con HMR en <code>localhost:5173</code>.</td>
+    </tr>
+    <tr>
+      <td><p><code>pnpm build</code></p></td>
+      <td>Construye la aplicación optimizada para producción con <b>SvelteKit</b>.</td>
+    </tr>
+    <tr>
+      <td><p><code>pnpm preview</code></p></td>
+      <td>Previsualiza localmente la versión de producción generada.</td>
+    </tr>
+    <tr>
+      <td><p><code>pnpm check</code></p></td>
+      <td>Ejecuta <b>svelte-kit sync</b> y verifica tipos con <code>svelte-check</code>.</td>
+    </tr>
+    <tr>
+      <td><p><code>pnpm check:watch</code></p></td>
+      <td>Igual que <code>check</code> pero en modo observación continua.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
 <h2>📬 Contacto</h2>
 
 <div align="center">
