@@ -12,6 +12,7 @@ description: Catálogo central de skills de diseño y arquitectura frontend para
 - **[svelte5](.agent/skills/svelte5/SKILL.md)**: Reglas para componentes Svelte 5 (runes, `$state`, `$props`) y arquitectura de rutas SvelteKit.
 - **[responsive-design](.agent/skills/responsive-design/SKILL.md)**: Diseño mobile-first, breakpoints y layouts fluidos para Promiedos-NBA.
 - **[code-quality](.agent/skills/code-quality/SKILL.md)**: Política "Sin Comentarios", naming conventions (Svelte/SvelteKit) y reglas de legibilidad.
+- **[accessibility](.agent/skills/accessibility/SKILL.md)**: Reglas obligatorias para garantizar la accesibilidad web (A11y) en Promiedos-NBA.
 - **[readme-auto-sync](.agent/skills/readme-auto-sync/SKILL.md)**: Reglas para mantener el README.md sincronizado con la estructura actual del proyecto.
 - **[skill-generator](.agent/skills/skill-generator/SKILL.md)**: Herramienta para crear nuevas skills siguiendo el estándar del proyecto.
 
