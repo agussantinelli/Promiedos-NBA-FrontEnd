@@ -191,6 +191,7 @@
     <li><b>⚡ svelte5:</b> Reglas para componentes Svelte 5 (runes, <code>$state</code>, <code>$props</code>) y arquitectura de rutas SvelteKit.</li>
     <li><b>📱 responsive-design:</b> Diseño mobile-first, breakpoints consistentes y layouts fluidos para Promiedos-NBA.</li>
     <li><b>🧹 code-quality:</b> Política "Sin Comentarios", naming conventions (Svelte/SvelteKit) y fetch centralizado en <code>src/lib/services/</code>.</li>
+    <li><b>♿ accessibility:</b> Reglas obligatorias para garantizar la accesibilidad web (A11y) en Promiedos-NBA (WCAG 2.1).</li>
     <li><b>🔄 readme-auto-sync:</b> Sincronización obligatoria del README cuando cambia la estructura, el stack o los comandos.</li>
     <li><b>📚 global-skills:</b> Índice maestro de todas las skills de diseño disponibles en el proyecto.</li>
 </ul>
